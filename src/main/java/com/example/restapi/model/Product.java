@@ -14,7 +14,6 @@ public class Product {
     private Integer qtd;
     private Double price;
     private String obs;
-
     
     public Integer getId() {
         return id;
@@ -46,6 +45,7 @@ public class Product {
     public void setObs(String obs) {
         this.obs = obs;
     }
-
+    
+    
     
 }
