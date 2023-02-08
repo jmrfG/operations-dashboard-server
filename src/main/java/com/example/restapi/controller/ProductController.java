@@ -28,7 +28,8 @@ public class ProductController {
     return ResponseEntity.ok(topics);
   }
 
-  public Product getProductById(Integer id) {
+  @GetMapping("/{id}")
+  public Product getProductById(@PathVariable("id") Integer id) {
     return productService.getProductById(id);
   }
 
